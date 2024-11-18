@@ -1,0 +1,43 @@
+{
+	"geode": "4.0.0-beta.1",
+	"gd": {
+		"win": "2.2074",
+		"mac": "2.2074",
+		"android": "2.2074"
+	},
+	"version": "v1.0.0",
+	"id": "alphalaneous.rainbow_checkpoints",
+	"name": "Rainbow Checkpoints",
+	"developer": "Alphalaneous",
+	"description": "Makes checkpoints rainbow",
+	"links": {
+        "homepage": "https://linktr.ee/Alphalaneous",
+        "source": "https://github.com/Alphalaneous/Rainbow-Checkpoints",
+        "community": "https://discord.gg/Txn2CA5dHF"
+    },
+	"resources": {
+		"sprites": [
+			"resources/*.png"
+		]
+	},
+	"settings": {
+		"starting-color": {
+			"type": "rgb",
+			"name": "Starting Color",
+			"description": "What color the first checkpoint should be.",
+			"default": [0, 255, 0]
+		},
+		"hue-shift": {
+			"type": "int",
+			"default": 10,
+			"min": 0,
+			"max": 360,
+			"name": "Hue Shift",
+			"description": "How much the hue shifts for every checkpoint.",
+			"control": {
+				"arrows": true,
+				"slider": true
+			}
+		}
+	}
+}
