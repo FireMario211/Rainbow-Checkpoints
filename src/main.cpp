@@ -9,6 +9,9 @@ class $modify(PlayLayer) {
     void updateCheckpoints() {
 		
 		if (CheckpointObject* obj = static_cast<CheckpointObject*>(m_checkpointArray->lastObject())) {
+
+			if (obj->m_physicalCheckpointObject->getChildByID("outer"_spr) || obj->m_physicalCheckpointObject->getChildByID("inner"_spr)) return;
+
 			ccColor3B color = Mod::get()->getSettingValue<ccColor3B>("starting-color"); 
 
 			if (m_checkpointArray->count() >= 2) {
